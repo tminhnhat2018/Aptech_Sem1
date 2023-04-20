@@ -20,8 +20,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- ============= owl carousel========== -->
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+
+    <!-- ============== animation css =================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
     <!-- ===========css phan chung ============= -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!-- ================== css page index =============== -->
+    <link rel="stylesheet" href="css/index.css">
+
 </head>
 
 <body>
@@ -106,15 +114,860 @@
     </header>
     <!-- Header Section End -->
 
-    
-
-    
-
-    
-
-    
-
-    
+    <main>
+        <!-- ================ noi dung trang index ================ -->
+        <section class="top-slider">
+            <div class="container">
+                <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="hover">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="banner-image">
+                            <img src="img/banner_1.jpg" class="d-block" alt="...">
+                        </div>
+                        <div class="carousel-caption d-flex flex-column justify-content-center row-gap-4">
+                          <p class="d-block animate__animated animate__fadeInLeftBig">Get up to 50% off Today Only!</p>
+                          <h5 class="animate__animated animate__slideInLeft">Woman Fashion</h5>
+                          <button class="btn-shop animate__animated animate__bounceIn animate__delay-2s"><a href="#">Shop Now</a></button>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="banner-image">
+                            <img src="img/banner_2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-caption d-flex flex-column justify-content-center row-gap-4">
+                          <p class="d-block animate__animated animate__fadeInDown">50% off in all products</p>
+                          <h5 class="animate__animated animate__flipInX">Man Fashion</h5>
+                          <button class="btn-shop animate__animated animate__bounceIn animate__delay-2s"><a href="#">Shop Now</a></button>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="banner-image">
+                            <img src="img/banner_3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-caption d-flex flex-column justify-content-center row-gap-4">
+                          <p class="d-block flex-column animate__animated animate__rotateInDownLeft">Taking your Viewing Experience to Next Level</p>
+                          <h5 class="animate__animated animate__rotateInUpLeft">Kid's Fashion</h5>
+                          <button class="btn-shop animate__animated animate__bounceIn animate__delay-2s"><a href="#">Shop Now</a></button>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </section>
+        <div class="container">
+            <section class="category">
+                <div class="category-content">
+                    <div class="caterory-image">
+                        <a href="#">
+                            <img src="img/category-woman.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="category-name">
+                        <a href="#">Woman</a>
+                    </div>
+                </div>
+                <div class="category-content">
+                    <div class="caterory-image">
+                        <a href="#">
+                            <img src="img/category-man.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="category-name">
+                        <a href="#">Man</a>
+                    </div>
+                </div>
+                <div class="category-content">
+                    <div class="caterory-image">
+                        <a href="#">
+                            <img src="https://demo2.themelexus.com/kiddo/wp-content/uploads/2022/09/gerally_img-4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="category-name">
+                        <a href="#">Kids</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="our-product">
+            <div class="container">
+                <div class="our-product-wrap">
+                    <div class="our-product-title">
+                        <h2>Our Products</h2>
+                    </div>
+                    <div class="our-product-list">
+                        <ul>
+                            <li class="item1">New Arrival</li>
+                            <li class="item2">Best Sellers</li>
+                            <li class="item3">On Sale</li>
+                        </ul>
+                    </div>
+                    <div class="out-product-content new-arrival active">
+                        <div class="product-post">
+                            <div class="product-post-img">
+                                <img src="img/polo_1.jpg" alt="" class="img_1">
+                                <img src="img/polo_2.jpg" alt="" class="img_2">
+                            </div>
+                            <div class="product-post-button">
+                                <div class="button-list button-add">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                                <div class="button-list button-view">
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                                <div class="button-list button-wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="product-post-name">
+                                <strong>Polo Shirt</strong>
+                            </div>
+                            <div class="product-post-price">
+                                <strong><span>$</span>69</strong>
+                            </div>
+                        </div>
+                        <div class="product-post">
+                            <div class="product-post-img">
+                                <img src="img/sweater_1.jpg" alt="" class="img_1">
+                                <img src="img/sweater_2.jpg" alt="" class="img_2">
+                            </div>
+                            <div class="product-post-button">
+                                <div class="button-list button-add">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                                <div class="button-list button-view">
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                                <div class="button-list button-wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="product-post-name">
+                                <strong>Merino Waffle Crewneck Sweater</strong>
+                            </div>
+                            <div class="product-post-price">
+                                <strong><span>$</span>100</strong>
+                            </div>
+                        </div>
+                        <div class="product-post">
+                            <div class="product-post-img">
+                                <img src="img/fleece_jacket_1.jpg" alt="" class="img_1">
+                                <img src="img/fleece_jacket_2.jpg" alt="" class="img_2">
+                            </div>
+                            <div class="product-post-button">
+                                <div class="button-list button-add">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                                <div class="button-list button-view">
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                                <div class="button-list button-wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="product-post-name">
+                                <strong>Unisphere Full-Zip Fleece Jacket</strong>
+                            </div>
+                            <div class="product-post-price">
+                                <strong><span>$</span>150</strong>
+                            </div>
+                        </div>
+                        <div class="product-post">
+                            <div class="product-post-img">
+                                <img src="img/pocket_tee_1.jpg" alt="" class="img_1">
+                                <img src="img/pocket_tee_2.jpg" alt="" class="img_2">
+                            </div>
+                            <div class="product-post-button">
+                                <div class="button-list button-add">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                                <div class="button-list button-view">
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                                <div class="button-list button-wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="product-post-name">
+                                <strong>Crest Pocket Tee</strong>
+                            </div>
+                            <div class="product-post-price">
+                                <strong><span>$</span>20</strong>
+                            </div>
+                        </div>
+                        <div class="product-post">
+                            <div class="product-post-img">
+                                <img src="img/cord_pant_1.jpg" alt="" class="img_1">
+                                <img src="img/cord_pant_2.jpg" alt="" class="img_2">
+                            </div>
+                            <div class="product-post-button">
+                                <div class="button-list button-add">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                                <div class="button-list button-view">
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                                <div class="button-list button-wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="product-post-name">
+                                <strong>Micro Cord Pant</strong>
+                            </div>
+                            <div class="product-post-price">
+                                <strong><span>$</span>120</strong>
+                            </div>
+                        </div>
+                        <div class="product-post">
+                            <div class="product-post-img">
+                                <img src="img/uniform_tee_1.jpg" alt="" class="img_1">
+                                <img src="img/uniform_tee_2.jpg" alt="" class="img_2">
+                            </div>
+                            <div class="product-post-button">
+                                <div class="button-list button-add">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                                <div class="button-list button-view">
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                                <div class="button-list button-wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="product-post-name">
+                                <strong>ALD Uniform Tee</strong>
+                            </div>
+                            <div class="product-post-price">
+                                <strong><span>$</span>19</strong>
+                            </div>
+                        </div>
+                        <div class="product-post">
+                            <div class="product-post-img">
+                                <img src="img/knit_crewneck_vest_1.jpg" alt="" class="img_1">
+                                <img src="img/knit_crewneck_vest_2.jpg" alt="" class="img_2">
+                            </div>
+                            <div class="product-post-button">
+                                <div class="button-list button-add">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                                <div class="button-list button-view">
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                                <div class="button-list button-wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="product-post-name">
+                                <strong>Knit Crewneck Vest</strong>
+                            </div>
+                            <div class="product-post-price">
+                                <strong><span>$</span>45</strong>
+                            </div>
+                        </div>
+                        <div class="product-post">
+                            <div class="product-post-img">
+                                <img src="img/uniform_hoodie_1.jpg" alt="" class="img_1">
+                                <img src="img/uniform_hoodie_2.jpg" alt="" class="img_2">
+                            </div>
+                            <div class="product-post-button">
+                                <div class="button-list button-add">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                                <div class="button-list button-view">
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                                <div class="button-list button-wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="product-post-name">
+                                <strong>ALD Uniform Hoodie</strong>
+                            </div>
+                            <div class="product-post-price">
+                                <strong><span>$</span>150</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ========= best seller=========== -->
+                    <div class="out-product-content best-sellers">
+                        <div class="product-post">
+                            <div class="product-post-img">
+                                <img src="img/man_jacket_1.jpg" alt="" class="img_1">
+                                <img src="img/man_jacket_2.jpg" alt="" class="img_2">
+                            </div>
+                            <div class="product-post-button">
+                                <div class="button-list button-add">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                                <div class="button-list button-view">
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                                <div class="button-list button-wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="product-post-name">
+                                <strong>Full-zip man jacket</strong>
+                            </div>
+                            <div class="product-post-price">
+                                <strong><span>$</span>99</strong>
+                            </div>
+                        </div>
+                        <div class="product-post">
+                            <div class="product-post-img">
+                                <img src="img/checkered_casual_polo_1.jpg" alt="" class="img_1">
+                                <img src="img/checkered_casual_polo_2.jpg" alt="" class="img_2">
+                            </div>
+                            <div class="product-post-button">
+                                <div class="button-list button-add">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                                <div class="button-list button-view">
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                                <div class="button-list button-wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="product-post-name">
+                                <strong>Checkered casual polo</strong>
+                            </div>
+                            <div class="product-post-price">
+                                <strong><span>$</span>119</strong>
+                            </div>
+                        </div>
+                        <div class="product-post">
+                            <div class="product-post-img">
+                                <img src="img/long_sleeve_shirt_1.jpg" alt="" class="img_1">
+                                <img src="img/long_sleeve_shirt_2.jpg" alt="" class="img_2">
+                            </div>
+                            <div class="product-post-button">
+                                <div class="button-list button-add">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                                <div class="button-list button-view">
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                                <div class="button-list button-wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="product-post-name">
+                                <strong>Long sleeve shirt</strong>
+                            </div>
+                            <div class="product-post-price">
+                                <strong><span>$</span>180</strong>
+                            </div>
+                        </div>
+                        <div class="product-post">
+                            <div class="product-post-img">
+                                <img src="img/red_casual_dress_1.jpg" alt="" class="img_1">
+                                <img src="img/red_casual_dress_2.jpg" alt="" class="img_2">
+                            </div>
+                            <div class="product-post-button">
+                                <div class="button-list button-add">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                                <div class="button-list button-view">
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                                <div class="button-list button-wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="product-post-name">
+                                <strong>Red casual dress</strong>
+                            </div>
+                            <div class="product-post-price">
+                                <strong><span>$</span>149</strong>
+                            </div>
+                        </div>
+                        <div class="product-post">
+                            <div class="product-post-img">
+                                <img src="img/striped_sundress_1.jpg" alt="" class="img_1">
+                                <img src="img/striped_sundress_2.jpg" alt="" class="img_2">
+                            </div>
+                            <div class="product-post-button">
+                                <div class="button-list button-add">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                                <div class="button-list button-view">
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                                <div class="button-list button-wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="product-post-name">
+                                <strong>Striped sundress</strong>
+                            </div>
+                            <div class="product-post-price">
+                                <strong><span>$</span>220</strong>
+                            </div>
+                        </div>
+                        <div class="product-post">
+                            <div class="product-post-img">
+                                <img src="img/sky_blue_shirt_1.jpg" alt="" class="img_1">
+                                <img src="img/sky_blue_shirt_2.jpg" alt="" class="img_2">
+                            </div>
+                            <div class="product-post-button">
+                                <div class="button-list button-add">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                                <div class="button-list button-view">
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                                <div class="button-list button-wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="product-post-name">
+                                <strong>Sky blue shirt</strong>
+                            </div>
+                            <div class="product-post-price">
+                                <strong><span>$</span>119</strong>
+                            </div>
+                        </div>
+                        <div class="product-post">
+                            <div class="product-post-img">
+                                <img src="img/woman_blue_pullover_1.jpg" alt="" class="img_1">
+                                <img src="img/woman_blue_pullover_2.jpg" alt="" class="img_2">
+                            </div>
+                            <div class="product-post-button">
+                                <div class="button-list button-add">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                                <div class="button-list button-view">
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                                <div class="button-list button-wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="product-post-name">
+                                <strong>Woman blue pullover</strong>
+                            </div>
+                            <div class="product-post-price">
+                                <strong><span>$</span>145</strong>
+                            </div>
+                        </div>
+                        <div class="product-post">
+                            <div class="product-post-img">
+                                <img src="img/gray_knitted_dresses_1.jpg" alt="" class="img_1">
+                                <img src="img/gray_knitted_dresses_2.jpg" alt="" class="img_2">
+                            </div>
+                            <div class="product-post-button">
+                                <div class="button-list button-add">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                                <div class="button-list button-view">
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                                <div class="button-list button-wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="product-post-name">
+                                <strong>Gray knitted dresses</strong>
+                            </div>
+                            <div class="product-post-price">
+                                <strong><span>$</span>200</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- =============on sale============= -->
+                    <div class="out-product-content on-sale">
+                        <div class="product-post">
+                            <div class="product-post-img">
+                                <img src="img/slim_fit_stretch_suit_1.jpg" alt="" class="img_1">
+                                <img src="img/slim_fit_stretch_suit_2.jpg" alt="" class="img_2">
+                            </div>
+                            <div class="product-post-button">
+                                <div class="button-list button-add">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                                <div class="button-list button-view">
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                                <div class="button-list button-wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="product-post-name">
+                                <strong>Slim Fit Stretch Suit</strong>
+                            </div>
+                            <div class="product-post-price">
+                                <strong><span>$</span>469</strong>
+                            </div>
+                        </div>
+                        <div class="product-post">
+                            <div class="product-post-img">
+                                <img src="img/t_shirst_blue_1.jpg" alt="" class="img_1">
+                                <img src="img/t_shirst_blue_2.jpg" alt="" class="img_2">
+                            </div>
+                            <div class="product-post-button">
+                                <div class="button-list button-add">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                                <div class="button-list button-view">
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                                <div class="button-list button-wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="product-post-name">
+                                <strong>T-shirst Blue</strong>
+                            </div>
+                            <div class="product-post-price">
+                                <strong><span>$</span>300</strong>
+                            </div>
+                        </div>
+                        <div class="product-post">
+                            <div class="product-post-img">
+                                <img src="img/summer_t_shirt_1.jpg" alt="" class="img_1">
+                                <img src="img/summer_t_shirt_2.jpg" alt="" class="img_2">
+                            </div>
+                            <div class="product-post-button">
+                                <div class="button-list button-add">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                                <div class="button-list button-view">
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                                <div class="button-list button-wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="product-post-name">
+                                <strong>Summer T-Shirt</strong>
+                            </div>
+                            <div class="product-post-price">
+                                <strong><span>$</span>210</strong>
+                            </div>
+                        </div>
+                        <div class="product-post">
+                            <div class="product-post-img">
+                                <img src="img/suspender_shorts_1.jpg" alt="" class="img_1">
+                                <img src="img/suspender_shorts_2.jpg" alt="" class="img_2">
+                            </div>
+                            <div class="product-post-button">
+                                <div class="button-list button-add">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                                <div class="button-list button-view">
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                                <div class="button-list button-wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="product-post-name">
+                                <strong>Suspender Shorts</strong>
+                            </div>
+                            <div class="product-post-price">
+                                <strong><span>$</span>130</strong>
+                            </div>
+                        </div>
+                        <div class="product-post">
+                            <div class="product-post-img">
+                                <img src="img/baby_outfit_1.jpg" alt="" class="img_1">
+                                <img src="img/baby_outfit_2.jpg" alt="" class="img_2">
+                            </div>
+                            <div class="product-post-button">
+                                <div class="button-list button-add">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                                <div class="button-list button-view">
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                                <div class="button-list button-wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="product-post-name">
+                                <strong>Baby Outfit</strong>
+                            </div>
+                            <div class="product-post-price">
+                                <strong><span>$</span>138</strong>
+                            </div>
+                        </div>
+                        <div class="product-post">
+                            <div class="product-post-img">
+                                <img src="img/denim_coat_1.jpg" alt="" class="img_1">
+                                <img src="img/denim_coat_1.jpg" alt="" class="img_2">
+                            </div>
+                            <div class="product-post-button">
+                                <div class="button-list button-add">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                                <div class="button-list button-view">
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                                <div class="button-list button-wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="product-post-name">
+                                <strong>Denim coat</strong>
+                            </div>
+                            <div class="product-post-price">
+                                <strong><span>$</span>19</strong>
+                            </div>
+                        </div>
+                        <div class="product-post">
+                            <div class="product-post-img">
+                                <img src="img/jacquard_dress_1.jpg" alt="" class="img_1">
+                                <img src="img/jacquard_dress_2.jpg" alt="" class="img_2">
+                            </div>
+                            <div class="product-post-button">
+                                <div class="button-list button-add">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                                <div class="button-list button-view">
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                                <div class="button-list button-wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="product-post-name">
+                                <strong>Jacquard Dress</strong>
+                            </div>
+                            <div class="product-post-price">
+                                <strong><span>$</span>55</strong>
+                            </div>
+                        </div>
+                        <div class="product-post">
+                            <div class="product-post-img">
+                                <img src="img/rugby_polo_shirt_1.jpg" alt="" class="img_1">
+                                <img src="img/rugby_polo_shirt_2.jpg" alt="" class="img_2">
+                            </div>
+                            <div class="product-post-button">
+                                <div class="button-list button-add">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                                <div class="button-list button-view">
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                                <div class="button-list button-wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="product-post-name">
+                                <strong>Rugby Polo Shirt</strong>
+                            </div>
+                            <div class="product-post-price">
+                                <strong><span>$</span>15</strong>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </section>
+        <section class="advertisement">
+            <div class="advertisement-wrap">
+                <div class="container">
+                    <div class="advertisement-content">
+                        <div class="advertisement-top">
+                            <div class="advertisement-top-left">
+                                <img src="img/advertisement_left.jpg" alt="">
+                                <div class="advertisement-title">
+                                    <h3>Stylist Hood Dress</h3>
+                                    <span>Get 25% flat off</span>
+                                    <button><a href="#">Shop Now</a></button>
+                                </div>
+                            </div>
+                            <div class="advertisement-top-right">
+                                <div class="advertisement-right-item">
+                                    <img src="img/advertisement_man.jpg" alt="">
+                                    <div class="advertisement-right-title">
+                                        <h3>#For Man</h3>
+                                        <span>Big Sale Off Final Sale Items. Caught in the moment!</span>
+                                        <button><a href="">Discover Now</a></button>
+                                    </div>
+                                </div>
+                                <div class="advertisement-right-item">
+                                    <img src="img/advertisement_boy.jpg" alt="">
+                                    <div class="advertisement-right-title">
+                                        <h3>#For Boy</h3>
+                                        <span>Big Sale Off Final Sale Items. Caught in the moment!</span>
+                                        <button><a href="">Discover Now</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advertisement-bottom">
+                            <img src="img/advertisement_bottom.jpg" alt="">
+                            <div class="advertisement-bottom-title">
+                                <span>#Trending Collection 2023</span>
+                                <h1>T-shirts For Women</h1>
+                                <h5>Limited edition tees for summer heat waves.</h5>
+                            </div>
+                            <div class="advertisement-bottom-button">
+                                <button><a href="#">Discover Now</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="trending-product">
+            <div class="container">
+                <div class="trending-product-wrap">
+                    <h2>Trending Products</h2>
+                    <div class="trending-product-list">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <img src="img/mickey_t_shirt_1.jpg" alt="" class="img_one">
+                                <img src="img/mickey_t_shirt_2.jpg" alt="" class="img_two">
+                                <div class="item-detail">
+                                    <h4>Mickey T-Shirt</h4>
+                                    <strong><span>$</span>50</strong>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/boy_jeans_1.jpg" alt="" class="img_one">
+                                <img src="img/boy_jeans_2.jpg" alt="" class="img_two">
+                                <div class="item-detail">
+                                    <h4>Boy's Jeans</h4>
+                                    <strong><span>$</span>90</strong>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/kid_siran_dress_1.jpg" alt="" class="img_one">
+                                <img src="img/kid_siran_dress_2.jpg" alt="" class="img_two">
+                                <div class="item-detail">
+                                    <h4>Kid's Siran Dress</h4>
+                                    <strong><span>$</span>70</strong>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/woman_shirt_dress_1.jpg" alt="" class="img_one">
+                                <img src="img/woman_shirt_dress_2.jpg" alt="" class="img_two">
+                                <div class="item-detail">
+                                    <h4>Woman's Shirt Dress</h4>
+                                    <strong><span>$</span>50</strong>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/crook _men_shirt_1.jpg" alt="" class="img_one">
+                                <img src="img/crook _men_shirt_2.jpg" alt="" class="img_two">
+                                <div class="item-detail">
+                                    <h4>Crook's Men Shirt</h4>
+                                    <strong><span>$</span>50</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="client-say">
+            <div class="container">
+                <div class="client-say-wrap">
+                    <div class="row" style="display: flex; align-items: center;">
+                        <div class="col-12 col-sm-6">
+                            <div class="client-title">
+                                <span>Testimonial.</span>
+                                <h2>Our Client Say!</h2>
+                                <p>What our clients say about us?</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="client-content">
+                                  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" style="margin: 0 auto; padding: 20px 0px;">
+                                    <div class="carousel-inner inner2">
+                                      <div class="carousel-item active" style="padding: 0 80px;">
+                                        <div class="client-info">
+                                            <div class="client-avata">
+                                                <img src="img/client_1.jpg" alt="">
+                                            </div>
+                                            <div class="client-name">
+                                                <h5>Lissa Castro</h5>
+                                            </div>
+                                        </div>
+                                        <div class="client-review">
+                                            <p>The products offered on this website are very unique. I Love my outfit!! The stitching is so perfect and worth the price. Perfect place to purchase clothes.</p>
+                                        </div>                                      </div>
+                                      <div class="carousel-item" style="padding: 0 80px;">
+                                        <div class="client-info">
+                                            <div class="client-avata">
+                                                <img src="img/client_2.jpg" alt="">
+                                            </div>
+                                            <div class="client-name">
+                                                <h5>John Becker</h5>
+                                            </div>
+                                        </div>
+                                        <div class="client-review">
+                                            <p>The products offered on this website are very unique. I Love my outfit!! The stitching is so perfect and worth the price. Perfect place to purchase clothes.</p>
+                                        </div>  
+                                      </div>
+                                      <div class="carousel-item" style="padding: 0 80px;">
+                                        <div class="client-info">
+                                            <div class="client-avata">
+                                                <img src="img/client_3.jpg" alt="">
+                                            </div>
+                                            <div class="client-name">
+                                                <h5>ALden Smith</h5>
+                                            </div>
+                                        </div>
+                                        <div class="client-review">
+                                            <p>The products offered on this website are very unique. I Love my outfit!! The stitching is so perfect and worth the price. Perfect place to purchase clothes.</p>
+                                        </div>  
+                                      </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Next</span>
+                                    </button>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="our-partners">
+            <div class="container">
+                <div class="our-partners-wrap">
+                    <div class="our-partners-list">
+                        <div class="our-partners-item">
+                            <img src="img/partner_1.jpg" alt="">
+                        </div>
+                        <div class="our-partners-item">
+                            <img src="img/partner_2.jpg" alt="">
+                        </div>
+                        <div class="our-partners-item">
+                            <img src="img/partner_3.jpg" alt="">
+                        </div>
+                        <div class="our-partners-item">
+                            <img src="img/partner_4.jpg" alt="">
+                        </div>
+                        <div class="our-partners-item">
+                            <img src="img/partner_5.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <!-- Footer Section Begin -->
     <footer class="footer">
@@ -185,6 +1038,62 @@
     
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("div.our-product-list").find("li.item1").click(function(){
+                var x= $("div.out-product-content").hasClass("active");
+                if(x){
+                    $("div.out-product-content").removeClass("active")
+                };
+                $("div.new-arrival").addClass("active");
+            })
+
+            $("div.our-product-list").find("li.item2").click(function(){
+                var x= $("div.out-product-content").hasClass("active");
+                if(x){
+                    $("div.out-product-content").removeClass("active")
+                };
+                $("div.best-sellers").addClass("active");
+                
+            })
+
+            $("div.our-product-list").find("li.item3").click(function(){
+                var x= $("div.out-product-content").hasClass("active");
+                if(x){
+                    $("div.out-product-content").removeClass("active")
+                };
+                $("div.on-sale").addClass("active");
+                
+            })
+
+        })
+
+        // =====owl carousel=========
+        $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:20,
+    nav:true,
+    dots:false,
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true,
+    responsive:{
+        0: {
+            items:1
+        },
+        425:{
+            items:2
+        },
+        768:{
+            items:3
+        },
+        1024:{
+            items:4
+        }
+    }
+})
+    </script>
 </body>
 
 </html>
