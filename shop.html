@@ -24,11 +24,11 @@
     <!-- ============== animation css =================== -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+
     <!-- ===========css phan chung ============= -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
-
-    <!-- ================== css page index =============== -->
-    <link rel="stylesheet" href="css/index.css">
 
     <!-- ================== css page shop =============== -->
     <link rel="stylesheet" href="css/shop.css">
@@ -66,14 +66,6 @@
                                 <a href="#">SIGN IN</a>
                                 <a href="#">SIGN UP</a>
                             </div>
-                            <!-- <div class="header__top__hover">
-                                <span>Usd <i class="arrow_carrot-down"></i></span>
-                                <ul>
-                                    <li>USD</li>
-                                    <li>EUR</li>
-                                    <li>USD</li>
-                                </ul>
-                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -161,13 +153,14 @@
                                                 <ul class="nice-scroll">
                                                     <li><a href="#">Men (20)</a></li>
                                                     <li><a href="#">Women (20)</a></li>
+                                                    <li><a href="#">Kids (20)</a></li> 
                                                     <li><a href="#">Bags (20)</a></li>
                                                     <li><a href="#">Clothing (20)</a></li>
                                                     <li><a href="#">Shoes (20)</a></li>
                                                     <li><a href="#">Accessories (20)</a></li>
-                                                    <li><a href="#">Kids (20)</a></li>
-                                                    <li><a href="#">Kids (20)</a></li>
-                                                    <li><a href="#">Kids (20)</a></li>
+                                                    <li><a href="#">Analog Watch (20)</a></li>                                                   
+                                                    <li><a href="#">Digital Watch (20)</a></li>
+                                                    <li><a href="#">Toys (20)</a></li>  
                                                 </ul>
                                             </div>
                                         </div>
@@ -832,64 +825,14 @@
 
     <!-- Js Plugins -->
     <script src="js/jquery-3.6.4.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>  
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>  
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-    <script>
-        $(document).ready(function(){
-            $("div.our-product-list").find("li.item1").click(function(){
-                var x= $("div.out-product-content").hasClass("active");
-                if(x){
-                    $("div.out-product-content").removeClass("active")
-                };
-                $("div.new-arrival").addClass("active");
-            })
 
-            $("div.our-product-list").find("li.item2").click(function(){
-                var x= $("div.out-product-content").hasClass("active");
-                if(x){
-                    $("div.out-product-content").removeClass("active")
-                };
-                $("div.best-sellers").addClass("active");
-                
-            })
-
-            $("div.our-product-list").find("li.item3").click(function(){
-                var x= $("div.out-product-content").hasClass("active");
-                if(x){
-                    $("div.out-product-content").removeClass("active")
-                };
-                $("div.on-sale").addClass("active");
-                
-            })
-
-        })
-
-        // =====owl carousel=========
-        $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:20,
-    nav:true,
-    dots:false,
-    autoplay:true,
-    autoplayTimeout:2000,
-    autoplayHoverPause:true,
-    responsive:{
-        0: {
-            items:1
-        },
-        425:{
-            items:2
-        },
-        768:{
-            items:3
-        },
-        1024:{
-            items:4
-        }
-    }
-})
-    </script>
 </body>
 
 </html>
