@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Fashion Shop">
+    <!-- <meta name="keywords" content="Male_Fashion, unica, creative, html"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cart</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <!-- ======================bootstrap====================== -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <!-- ==================font-awesome==================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- ============= owl carousel========== -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <!-- ===========css phan chung ============= -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!-- =======css cart html========= -->
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-md-6">
+                        <!-- <div class="header__top__left">
+                            <p>Free shipping, 30-day return or refund guarantee.</p>
+                        </div> -->
+                        <div class="header__top__hover">
+                            <span>English<i class="fa-solid fa-chevron-down"></i></span>
+                            <ul>
+                                <li>English</li>
+                                <li>Tiếng Việt</li>
+                            </ul>                           
+                        </div>
+                    </div>
+                    <div class="col-8 col-md-6">
+                        <div class="header__top__right">
+                            <div class="header__top__links">
+                                <a href="#">SIGN IN</a>
+                                <a href="#">SIGN UP</a>
+                            </div>
+                            <!-- <div class="header__top__hover">
+                                <span>Usd <i class="arrow_carrot-down"></i></span>
+                                <ul>
+                                    <li>USD</li>
+                                    <li>EUR</li>
+                                    <li>USD</li>
+                                </ul>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-3 col-lg-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo_braga.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-9 col-lg-6">
+                    <nav class="header__menu mobile-menu">
+                        <ul>
+                            <li class="active"><a href="./index.html">Home</a></li>
+                            <li><a href="./shop.html">Shop</a></li>
+                            <li><a href="#">Pages</a>
+                                <ul class="dropdown">
+                                    <li><a href="./about.html">About Us</a></li>
+                                    <li><a href="./shop-details.html">Shop Details</a></li>
+                                    <li><a href="./shopping-cart.html">Shopping Cart</a></li>
+                                    <li><a href="./checkout.html">Check Out</a></li>
+                                    <li><a href="./blog-details.html">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a href="./contact.html">Contacts</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-3">
+                    <div class="header__nav__option">
+                        <a href="#" class="search-switch"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i><span>0</span></a>
+                        <div class="price">$0.00</div>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas__open"><i class="fa fa-bars"></i></div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    
+
+    <main>
+
+        <!-- ================ code phan noi dung cua tung trang vao================ -->
+        <div class="title-page">
+            <div class="container">
+                <h4>Cart</h4>
+                <nav style="--bs-breadcrumb-divider: '>'; color: black;" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Cart</li>
+                    </ol>
+                  </nav>
+            </div>
+        </div>
+        <div class="table-wrap">
+            <div class="container"> 
+                <table class="table">
+                    <thead>
+                      <tr class="table-dark">
+                        <th scope="col">Product ID</th>
+                        <th scope="col">Product</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Subtotal</th>
+                        <th scope="col">Remove</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- <tr>
+                        <th scope="row">1</th>
+                        <td class="product-info" style="display: flex; justify-content: flex-start; column-gap: 20px; align-items: center;">
+                            <div class="product-img">
+                                    <img src="img/image_index/polo_1.jpg" alt="polo_1" style="width: 100px; height: 110px;">
+                            </div>
+                            <strong>Polo Shirt</strong>
+                        </td>
+                        <td>$69</td>
+                        <td>
+                            <button style="display: inline-block; padding: 5px;">-</button>
+                            <div class="quantity-number" style="display: inline-block;"><input class="input-value" type="text" value="1" min="1"></div>
+                            <button style="display: inline-block; padding: 5px;">+</button>
+                        </td>
+                        <td>$69</td>
+                        <td><button class="remove-product"><i class="fa-solid fa-xmark"></i></button></td>
+                        <div class="quantity_number" style="display: inline-block;">${list_product[key]["quantity"]}</div>
+                      </tr> -->
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+        <div class="cart-button-wrap">
+            <div class="container">
+                <hr>
+                <div class="cart-button">
+                    <div class="cart-coupon">
+                        <input type="text" placeholder="Coupon code" style="padding: 8px; font-size: 15px;">
+                        <button class="btn-coupon">Apply Coupon</button>
+                    </div>
+                    <div class="cart-update">
+                        <button class="btn-update">Update Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="margin: 0 auto; width: 100%;">
+        <div class="container">
+            <div class="cart-total">
+                <table class="table-total">
+                    <tr class="total-row">
+                        <th class="total-title" colspan="2">Cart Totals</th>
+                    </tr>
+                    <!-- <tr class="total-row">
+                        <td class="total-data">Subtotal</td>
+                        <td class="total-data">$<span>100</span></td>
+                    </tr> -->
+                    <tr class="total-row">
+                        <td class="total-data">Total</td>
+                        <td class="total-data">$<span>0</span></td>
+                    </tr>
+                </table>
+                <div class="button-proceed-checkout">
+                    <button class="proceed-checkout"><a href="#">Proceed To Checkout</a></button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+
+    
+
+    
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="#"><img src="img/logo_braga_footer.png" alt=""></a>
+                        </div>
+                        <p>The customer is at the heart of our unique business model, which includes design.</p>
+                        <a href="#"><img src="img/payment.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-sm-6 offset-lg-1 col-md-3 col-lg-2">
+                    <div class="footer__widget">
+                        <h6>Shopping</h6>
+                        <ul>
+                            <li><a href="#">Clothing Store</a></li>
+                            <li><a href="#">Trending Shoes</a></li>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Sale</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-2">
+                    <div class="footer__widget">
+                        <h6>Shopping</h6>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Payment Methods</a></li>
+                            <li><a href="#">Delivary</a></li>
+                            <li><a href="#">Return & Exchanges</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 offset-lg-1 col-md-6 col-lg-3">
+                    <div class="footer__widget">
+                        <h6>NewLetter</h6>
+                        <div class="footer__newslatter">
+                            <p>Be the first to know about new arrivals, look books, sales & promos!</p>
+                            <form action="#">
+                                <input type="text" placeholder="Your email">
+                                <button type="submit"><span class="icon_mail_alt"></span></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+            let total_products=0;
+            let cart_total=0;
+            // lay data tu localstorage:
+            let list_product=localStorage.getItem("list_product");
+            if(list_product){
+                list_product=JSON.parse(list_product);
+
+                // hien thi data ra table:
+                Object.keys(list_product).map(function(key,index){
+                    let subtotal=parseInt(list_product[key]['quantity'])*parseInt(list_product[key]['price']);
+                    let record=`
+                    <tr class="item_row">
+                        <th scope="row" data-title = "Product ID">${list_product[key]["id"]}</th>
+                        <td data-title = "Product" class="product-info">
+                            <div class="product-img">
+                                    <img src=${list_product[key]["img"]} alt="polo_1" style="width: 100px; height: 110px;">
+                            </div>
+                            <strong>${list_product[key]["name"]}</strong>
+                        </td>
+                        <td data-title = "Price" class="product-price">$${list_product[key]["price"]}</td>
+                        <td data-title = "Quantity" class="product-quantity">
+                            <button class="cart_quantity_down">-</button>
+                            <div class="quantity-number" style="display: inline-block;"><input class="input-value" type="text" value="${list_product[key]["quantity"]}"></div>
+                            
+                            <button class="cart_quantity_up">+</button>
+                        </td>
+                        <td data-title = "Subtotal" class="product-subtotal">$${subtotal}</td>
+                        <td data-title = "Remove"><button class="remove-product"><i class="fa-solid fa-xmark"></i></button></td>
+                      </tr>
+                    `
+                    $("table.table").find("tbody").append(record);
+
+                    // tính tổng tiền cart.
+					cart_total= cart_total+subtotal;
+                })
+
+                // hiển thị tổng tiền cart.
+				$("tr.total-row").find("td:last-child").find("span").text(cart_total);
+
+                // hiển thị sl product trong giỏ cart:
+				Object.keys(list_product).map(function(key,index){
+				total_products = total_products + list_product[key]['quantity']; 
+				})
+				$("div.header__nav__option").find("a:nth-child(3)").find("span").text(total_products);
+            }
+
+            // click nut tang:
+            $("button.cart_quantity_up").click(function () {
+				// tăng trên màn hình:
+				let current_qty = $(this).closest("td.product-quantity").find("div.quantity-number").find("input.input-value").val();
+				let unit_price = $(this).closest("tr").find("td.product-price").text();
+				let current_total_cart = $("tr.total-row").find("td:last-child").find("span").text();
+
+				let new_qty = parseInt(current_qty) + 1;
+                $(this).closest("td.product-quantity").find("div.quantity-number").find("input.input-value").val(new_qty);
+
+				let new_subtotal = new_qty * parseInt(unit_price.substring(1,));
+				$(this).closest("tr").find("td.product-subtotal").text("$" + new_subtotal);
+
+				var new_total_cart = parseInt(current_total_cart) + parseInt(unit_price.substring(1,));
+				$("tr.total-row").find("td:last-child").find("span").text(new_total_cart);
+
+				// tăng trong localstorage:
+				let productid = $(this).closest("tr.item_row").find("th").text();
+				Object.keys(list_product).map(function (key, index) {
+					if (key == productid) {
+						list_product[key]['quantity'] = new_qty;
+					}
+				})
+				localStorage.setItem("list_product", JSON.stringify(list_product));
+
+				// tang sl product trong giỏ cart:
+				total_products=total_products+1;
+				$("div.header__nav__option").find("a:nth-child(3)").find("span").text(total_products);
+
+			})
+
+            // click nut giam:
+            $("button.cart_quantity_down").click(function () {
+				// giảm trên màn hình:
+				let current_qty = $(this).closest("td.product-quantity").find("div.quantity-number").find("input.input-value").val();
+				let unit_price = $(this).closest("tr").find("td.product-price").text();
+				let current_total_cart = $("tr.total-row").find("td:last-child").find("span").text();
+
+				if (parseInt(current_qty) > 1) {
+					var new_qty = parseInt(current_qty) - 1;
+                    $(this).closest("td.product-quantity").find("div.quantity-number").find("input.input-value").val(new_qty);
+
+					let new_subtotal = new_qty * parseInt(unit_price.substring(1,));
+				    $(this).closest("tr").find("td.product-subtotal").text("$" + new_subtotal);
+
+					var new_total_cart = parseInt(current_total_cart) - parseInt(unit_price.substring(1,));
+				    $("tr.total-row").find("td:last-child").find("span").text(new_total_cart);
+
+					// giảm trong localstorage:
+					let productid = $(this).closest("tr.item_row").find("th").text();
+					Object.keys(list_product).map(function (key, index) {
+						if (key == productid) {
+							list_product[key]['quantity'] = new_qty;
+						}
+					})
+
+					// giảm sl product trong giỏ cart:
+					total_products=total_products-1;
+					$("div.header__nav__option").find("a:nth-child(3)").find("span").text(total_products);
+				}
+				localStorage.setItem("list_product", JSON.stringify(list_product));
+
+			})
+            
+            // delete:
+            $("button.remove-product").click(function(){
+                // delete trên màn hình:
+				let current_total_cart = $("tr.total-row").find("td:last-child").find("span").text();
+				let current_subtotal = $(this).closest("tr.item_row").find("td.product-subtotal").text();
+				$(this).closest("tr.item_row").remove();
+				let new_total_cart = parseInt(current_total_cart) - parseInt(current_subtotal.substring(1,));
+                $("tr.total-row").find("td:last-child").find("span").text(new_total_cart);
+
+				// delete trong localstorage:
+				let productid = $(this).closest("tr.item_row").find("th").text();
+				Object.keys(list_product).map(function (key, index) {
+					if (key == productid) {
+						// giảm sl product trong giỏ cart
+						total_products=total_products-parseInt(list_product[key]['quantity']);
+						$("div.header__nav__option").find("a:nth-child(3)").find("span").text(total_products);
+						// xóa product
+						delete list_product[key];
+					}
+				})
+				localStorage.setItem("list_product", JSON.stringify(list_product));
+
+                
+			})
+            // })
+        })
+    </script>
+</body>
+
+</html>
