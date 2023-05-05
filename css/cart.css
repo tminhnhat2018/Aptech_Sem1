@@ -1,0 +1,200 @@
+/* css cart */
+.title-page {
+    display: block;
+    width: 100%;
+    padding: 40px 0px;
+    background-color: #f3f2ee;
+    margin: 20px 0px;
+}
+.title-page>div.container>h4 {
+    font-weight: bold;
+}
+.breadcrumb-item>a {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+.breadcrumb-item.active {
+    color: gray;
+}
+th, td {
+    text-align: center;
+    vertical-align: middle;
+}
+td.product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+td.product-info>strong {
+    display: block;
+}
+td.product-info>div.product-img {
+    width: 100px;
+    height: 110px;
+}
+td.product-info>div.product-img>img {
+    display: block;
+    object-fit: cover;
+}
+td.product-quantity>button.cart_quantity_down {
+    padding: 1px 12px;
+    background-color: black;
+    font-size: 20px;
+    border: none;
+    color: white;
+    border-radius: 3px;
+}
+td.product-quantity>button.cart_quantity_up {
+    padding: 1px 10px;
+    background-color: black;
+    font-size: 20px;
+    border: none;
+    color: white;
+    border-radius: 3px;
+}
+td.product-quantity>button.cart_quantity_down:hover {
+    background-color: red;
+    color: white;
+    transition: ease-out 0.4s;
+}
+td.product-quantity>button.cart_quantity_up:hover {
+    background-color: red;
+    color: white;
+    transition: ease-out 0.4s;
+}
+td>div.quantity-number>input.input-value {
+    width: 40px;
+    padding: 4px;
+    text-align: center;
+}
+td>button.remove-product {
+    padding: 3px 9px;
+    border: none;
+    border-radius: 100%;
+    background-color: red;
+    color: white;
+}
+td>button.remove-product:hover {
+    background-color: white;
+    border: 1px solid red;
+    color: red;
+    transition: ease-in-out 0.4s;
+}
+.cart-button-wrap {
+    margin: 20px 0px;
+    padding: 40px 0px;
+}
+.cart-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart-coupon>button.btn-coupon {
+    font-size: 15px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+.cart-coupon>input::placeholder {
+    font-size: 15px;
+    color: gray;
+}
+.cart-coupon>button.btn-coupon:hover {
+    background-color: red;
+    transition: ease-in-out 0.4s;
+}
+.cart-update>button.btn-update {
+    font-size: 15px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+.cart-update>button.btn-update:hover {
+    background-color: red;
+    transition: ease-in-out 0.4s;
+}
+div.bar {
+    width: 100%;
+    font-size: 30px;
+    color: gray;
+    text-align: center;
+}
+.cart-total {
+    border: 2px solid #c5c0c0;
+    padding: 20px;
+    margin: 40px 0px;
+}
+table.table-total {
+    border-collapse: collapse;
+    width: 100%;
+}
+th.total-title {
+    background-color: black;
+    color: white;
+}
+th.total-title, td.total-data {
+    text-align: left;
+    padding: 20px;
+}
+td.total-data {
+    border-bottom: 1px solid gray;
+    color: black;
+}
+.button-proceed-checkout {
+    margin: 20px 0px;
+    padding: 10px 0px;
+}
+.button-proceed-checkout>button.proceed-checkout {
+    padding: 10px 20px;
+    background-color: black;
+    border: none;
+}
+.button-proceed-checkout>button.proceed-checkout>a {
+    color: white;
+}
+.button-proceed-checkout>button.proceed-checkout:hover {
+    background-color: red;
+    transition: ease-in-out 0.5s;
+}
+/* === responsive table==== */
+@media only screen and (max-width: 769px) {
+    table.table>thead>tr {
+        display: none;
+    }
+    table.table>tr {
+        display: block;
+    }
+    table.table th, table.table td {
+        padding: 5px;
+        text-align: right;
+        display: block;
+        width: 100%;
+    }
+    table.table td.product-info {
+        display: inline-flex;
+        row-gap: 10px;
+        width: 100%;
+    }
+    table.table th::before,  table.table td::before {
+        content: attr(data-title) ": ";
+        float: left;
+       font-weight: bold;
+    }
+    table.table td.product-info::before {
+        width: 100%;
+        text-align: left;
+    }
+    table.table td.product-info>div.product-img {
+        width: 100%;
+    }
+    table.table td.product-info>strong {
+        width: 100%;
+    }
+    table.table tbody tr:nth-child(even) {
+        background-color: #e4d9d97e;
+    }
+}
