@@ -1367,8 +1367,8 @@
                 if (data){
                     data=JSON.parse(data);
                     Object.keys(data).map(function(key,index){
-                        if(key==product.id){
-                            product.quantity=parseInt(product.quantity)+1;
+                        if(key == product.id){
+                            product.quantity=parseInt(data[key]["quantity"])+1;
                         }
                     })
                 }else{
