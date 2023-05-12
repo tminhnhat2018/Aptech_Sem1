@@ -78,8 +78,6 @@
 form.contact-form {
     padding: 20px;
     border-radius: 5px;
-    /* background-color: #f7a9a997; */
-    background-color: #00000034;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 form.contact-form>div.input-item>label {
@@ -93,11 +91,12 @@ form.contact-form>div.input-item>input {
     padding: 10px;
 }
 input[type=text], input[type=email] {
-    border: none;
+    border: 1px solid;
     box-shadow: none;
 }
 input[type=text]:focus, input[type=email]:focus {
     box-shadow: 0 0 2px 2px black;
+    outline: none;
 }
 form.contact-form input::placeholder {
     color: #b8b5b5;
@@ -113,6 +112,9 @@ textarea#message {
     display: block;
     width: 100%;
     padding: 10px 10px 40px 10px;
+}
+textarea#message:focus {
+    box-shadow: 0 0 2px 2px black;
 }
 textarea#message::placeholder {
     color: #b8b5b5;
@@ -131,14 +133,12 @@ textarea#message::placeholder {
     font-weight: bold;
     text-transform: uppercase;
     color: white;
-    background-color: rgb(135, 125, 125);
-    border: 1px solid white;
-    /* border: none; */
-    border-radius: 30px;
+    background-color: black;
+    border-radius: 5px;
+    border: none;
 }
 .form-submit>input[type=submit]:hover {
-    background-color: black;
-    box-shadow: 0 8px 8px -4px black;
+    background-color: red;
     transition: ease-out 0.4s;
 }
 .input-item {

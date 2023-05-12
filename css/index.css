@@ -181,6 +181,12 @@
 .our-product-list>ul.list-wrap>li.item1.view {
     color: red;
 }
+.our-product-list>ul.list-wrap>li.item2.view {
+    color: red;
+}
+.our-product-list>ul.list-wrap>li.item3.view {
+    color: red;
+}
 .our-product-list>ul>li:last-child {
     border-right: none;
 }
