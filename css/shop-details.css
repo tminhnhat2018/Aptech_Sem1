@@ -139,6 +139,12 @@
 	margin-bottom: 16px;
 }
 
+.product__details__text h3 strong {
+	color: #0d0d0d;
+	font-weight: 700;
+	margin-bottom: 16px;
+}
+
 .product__details__text h3 span {
 	color: #b7b7b7;
 	font-size: 20px;
@@ -343,6 +349,13 @@
 
 .product__details__last__option ul li {
 	list-style: none;
+	font-size: 15px;
+	color: #111111;
+	font-weight: 700;
+	line-height: 30px;
+}
+
+.product__details__last__option ul li>strong {
 	font-size: 15px;
 	color: #111111;
 	font-weight: 700;
