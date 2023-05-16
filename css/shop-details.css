@@ -336,7 +336,8 @@
 	right: 0;
 	top: 10px;
 	height: 1px;
-	width: 460px;
+	/* width: 460px; */
+	width: 100%;
 	background: #e5e5e5;
 	content: "";
 	z-index: -1;

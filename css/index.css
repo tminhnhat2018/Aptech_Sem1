@@ -302,9 +302,9 @@
 .product-post-id {
     width: 100%;
     padding: 10px 0px;
-    color: gray;
+    color: #cfc9c9;
     font-size: 12px;
-    font-weight: bold;
+    /* font-weight: bold; */
     text-align: center;
 }
 /* ==========jquery========= */
@@ -641,10 +641,8 @@
     }
 
 }
-@media only screen and (max-width: 375px) {
-    /* ==trending product=== */
-   
-}
+
+
 
 
 
