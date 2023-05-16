@@ -11,7 +11,7 @@
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
-    rel="stylesheet">
+        rel="stylesheet">
 
     <!-- Css Styles -->
     <!-- ======================bootstrap====================== -->
@@ -34,15 +34,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-4 col-md-6">
-                        <!-- <div class="header__top__left">
-                            <p>Free shipping, 30-day return or refund guarantee.</p>
-                        </div> -->
                         <div class="header__top__hover">
                             <span>English<i class="fa-solid fa-chevron-down"></i></span>
                             <ul>
                                 <li>English</li>
                                 <li>Tiếng Việt</li>
-                            </ul>                           
+                            </ul>
                         </div>
                     </div>
                     <div class="col-8 col-md-6">
@@ -51,14 +48,6 @@
                                 <a href="#">SIGN IN</a>
                                 <a href="#">SIGN UP</a>
                             </div>
-                            <!-- <div class="header__top__hover">
-                                <span>Usd <i class="arrow_carrot-down"></i></span>
-                                <ul>
-                                    <li>USD</li>
-                                    <li>EUR</li>
-                                    <li>USD</li>
-                                </ul>
-                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -76,17 +65,18 @@
                         <ul>
                             <li class="active"><a href="./index.html">Home</a></li>
                             <li><a href="./shop.html">Shop</a></li>
-                            <li><a href="#">Pages</a>
+                            <li><a href="shop-details.html">Products</a>
                                 <ul class="dropdown">
-                                    <li><a href="./about.html">About Us</a></li>
-                                    <li><a href="./shop-details.html">Shop Details</a></li>
-                                    <li><a href="./shopping-cart.html">Shopping Cart</a></li>
+                                    <li><a href="./shop.html">All Products</a></li>
+                                    <li><a href="./shop.html">For Man</a></li>
+                                    <li><a href="./shop.html">For Woman</a></li>
+                                    <li><a href="./shop.html">For Kids</a></li>
                                     <li><a href="./checkout.html">Check Out</a></li>
-                                    <li><a href="./blog-details.html">Blog Details</a></li>
+                                    <!-- <li><a href="./blog-details.html">Blog Details</a></li> -->
                                 </ul>
                             </li>
                             <li><a href="./blog.html">Blog</a></li>
-                            <li><a href="./contact.html">Contacts</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -94,8 +84,8 @@
                     <div class="header__nav__option">
                         <a href="#" class="search-switch"><i class="fa-solid fa-magnifying-glass"></i></a>
                         <a href="#"><i class="fa-regular fa-heart"></i></a>
-                        <a href="#"><i class="fa-solid fa-cart-shopping"></i><span>0</span></a>
-                        <div class="price">$0.00</div>
+                        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i><span>0</span></a>
+                        <!-- <div class="price">$0.00</div> -->
                     </div>
                 </div>
             </div>
@@ -104,37 +94,37 @@
     </header>
     <!-- Header Section End -->
 
-    
+
 
     <main>
 
-        <!-- ================ code phan noi dung cua tung trang vao================ -->
+        <!-- ================ page cart ================ -->
         <div class="title-page">
             <div class="container">
                 <h4>Cart</h4>
                 <nav style="--bs-breadcrumb-divider: '>'; color: black;" aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">Cart</li>
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Cart</li>
                     </ol>
-                  </nav>
+                </nav>
             </div>
         </div>
         <div class="table-wrap">
-            <div class="container"> 
+            <div class="container">
                 <table class="table">
                     <thead>
-                      <tr class="table-dark">
-                        <th scope="col">Product ID</th>
-                        <th scope="col">Product</th>
-                        <th scope="col">Price</th>
-                        <th scope="col">Quantity</th>
-                        <th scope="col">Subtotal</th>
-                        <th scope="col">Remove</th>
-                      </tr>
+                        <tr class="table-dark">
+                            <th scope="col">Product ID</th>
+                            <th scope="col">Product</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Subtotal</th>
+                            <th scope="col">Remove</th>
+                        </tr>
                     </thead>
                     <tbody>
-                      <!-- <tr>
+                        <!-- <tr>
                         <th scope="row">1</th>
                         <td class="product-info" style="display: flex; justify-content: flex-start; column-gap: 20px; align-items: center;">
                             <div class="product-img">
@@ -153,7 +143,7 @@
                         <div class="quantity_number" style="display: inline-block;">${list_product[key]["quantity"]}</div>
                       </tr> -->
                     </tbody>
-                  </table>
+                </table>
             </div>
         </div>
         <div class="cart-button-wrap">
@@ -165,7 +155,7 @@
                         <button class="btn-coupon">Apply Coupon</button>
                     </div>
                     <div class="cart-update">
-                        <button class="btn-update">Update Cart</button>
+                        <button class="btn-update"><a href="index.html">Update Cart</a></button>
                     </div>
                 </div>
             </div>
@@ -187,17 +177,17 @@
                     </tr>
                 </table>
                 <div class="button-proceed-checkout">
-                    <button class="proceed-checkout"><a href="#">Proceed To Checkout</a></button>
+                    <button class="proceed-checkout"><a href="checkout.html">Proceed To Checkout</a></button>
                 </div>
             </div>
         </div>
     </main>
 
-    
 
-    
 
-    
+
+
+
 
     <!-- Footer Section Begin -->
     <footer class="footer">
@@ -209,7 +199,27 @@
                             <a href="#"><img src="img/logo_braga_footer.png" alt=""></a>
                         </div>
                         <p>The customer is at the heart of our unique business model, which includes design.</p>
-                        <a href="#"><img src="img/payment.png" alt=""></a>
+                        <div class="social">
+                            <a href="#">
+                                <i class="fa-brands fa-facebook" style="color: white;"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-twitter" style="color: white;"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-google-plus" style="color: white;"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-youtube" style="color: white;"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram" style="color: white;"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-tiktok" style="color: white;"></i>
+                            </a>
+                        </div>
+                        <!-- <a href="#"><img src="img/payment.png" alt=""></a> -->
                     </div>
                 </div>
                 <div class="col-sm-6 offset-lg-1 col-md-3 col-lg-2">
@@ -225,7 +235,7 @@
                 </div>
                 <div class="col-sm-6 col-md-3 col-lg-2">
                     <div class="footer__widget">
-                        <h6>Shopping</h6>
+                        <h6>About Us</h6>
                         <ul>
                             <li><a href="#">Contact Us</a></li>
                             <li><a href="#">Payment Methods</a></li>
@@ -240,12 +250,17 @@
                         <div class="footer__newslatter">
                             <p>Be the first to know about new arrivals, look books, sales & promos!</p>
                             <form action="#">
-                                <input type="text" placeholder="Your email">
-                                <button type="submit"><span class="icon_mail_alt"></span></button>
+                                <input type="text" placeholder="Your email" required>
+                                <button type="submit" class="btn-send"><i class="fa-solid fa-paper-plane"></i></button>
                             </form>
                         </div>
                     </div>
+                    <a href="#"><img src="img/payment.png" alt="#"></a>
                 </div>
+            </div>
+            <hr style="color: white;">
+            <div class="footer-last">
+                © Copyright 2023 - Braga. All Rights Reserved.
             </div>
         </div>
     </footer>
@@ -265,27 +280,27 @@
     <!-- Js Plugins -->
     <script src="js/jquery-3.6.4.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    
+
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-        $(document).ready(function(){
-            let total_products=0;
-            let cart_total=0;
+        $(document).ready(function () {
+            let total_products = 0;
+            let cart_total = 0;
             // lay data tu localstorage:
-            let list_product=localStorage.getItem("list_product");
-            if(list_product){
-                list_product=JSON.parse(list_product);
+            let list_product = localStorage.getItem("list_product");
+            if (list_product) {
+                list_product = JSON.parse(list_product);
 
                 // hien thi data ra table:
-                Object.keys(list_product).map(function(key,index){
-                    let subtotal=parseInt(list_product[key]['quantity'])*parseInt(list_product[key]['price']);
-                    let record=`
+                Object.keys(list_product).map(function (key, index) {
+                    let subtotal = parseInt(list_product[key]['quantity']) * parseInt(list_product[key]['price']);
+                    let record = `
                     <tr class="item_row">
                         <th scope="row" data-title = "Product ID">${list_product[key]["id"]}</th>
                         <td data-title = "Product" class="product-info">
-                            <div class="product-img">
-                                    <img src=${list_product[key]["img"]} alt="polo_1" style="width: 100px; height: 110px;">
+                            <div class="product-img" style = "display: block; width: 100px; height: 110px;">
+                                    <img src=${list_product[key]["img"]} alt=${list_product[key]["name"]} style = "object-fit: cover; height: 100%; margin:0 auto;">
                             </div>
                             <strong>${list_product[key]["name"]}</strong>
                         </td>
@@ -296,118 +311,116 @@
                             
                             <button class="cart_quantity_up">+</button>
                         </td>
-                        <td data-title = "Subtotal" class="product-subtotal">$${subtotal}</td>
+                        <td data-title = "Subtotal" class="product-subtotal">$${subtotal.toFixed(2)}</td>
                         <td data-title = "Remove"><button class="remove-product"><i class="fa-solid fa-xmark"></i></button></td>
                       </tr>
                     `
                     $("table.table").find("tbody").append(record);
 
                     // tính tổng tiền cart.
-					cart_total= cart_total+subtotal;
+                    cart_total = cart_total + subtotal;
                 })
 
                 // hiển thị tổng tiền cart.
-				$("tr.total-row").find("td:last-child").find("span").text(cart_total);
+                $("tr.total-row").find("td:last-child").find("span").text(cart_total.toFixed(2));
 
                 // hiển thị sl product trong giỏ cart:
-				Object.keys(list_product).map(function(key,index){
-				total_products = total_products + list_product[key]['quantity']; 
-				})
-				$("div.header__nav__option").find("a:nth-child(3)").find("span").text(total_products);
+                Object.keys(list_product).map(function (key, index) {
+                    total_products = total_products + list_product[key]['quantity'];
+                })
+                $("div.header__nav__option").find("a:nth-child(3)").find("span").text(total_products);
             }
 
             // click nut tang:
             $("button.cart_quantity_up").click(function () {
-				// tăng trên màn hình:
-				let current_qty = $(this).closest("td.product-quantity").find("div.quantity-number").find("input.input-value").val();
-				let unit_price = $(this).closest("tr").find("td.product-price").text();
-				let current_total_cart = $("tr.total-row").find("td:last-child").find("span").text();
+                // tăng trên màn hình:
+                let current_qty = $(this).closest("td.product-quantity").find("div.quantity-number").find("input.input-value").val();
+                let unit_price = $(this).closest("tr").find("td.product-price").text();
+                let current_total_cart = $("tr.total-row").find("td:last-child").find("span").text();
 
-				let new_qty = parseInt(current_qty) + 1;
+                let new_qty = parseInt(current_qty) + 1;
                 $(this).closest("td.product-quantity").find("div.quantity-number").find("input.input-value").val(new_qty);
 
-				let new_subtotal = new_qty * parseInt(unit_price.substring(1,));
-				$(this).closest("tr").find("td.product-subtotal").text("$" + new_subtotal);
+                let new_subtotal = new_qty * parseInt(unit_price.substring(1,));
+                $(this).closest("tr").find("td.product-subtotal").text("$" + new_subtotal.toFixed(2));
 
-				var new_total_cart = parseInt(current_total_cart) + parseInt(unit_price.substring(1,));
-				$("tr.total-row").find("td:last-child").find("span").text(new_total_cart);
+                var new_total_cart = parseInt(current_total_cart) + parseInt(unit_price.substring(1,));
+                $("tr.total-row").find("td:last-child").find("span").text(new_total_cart.toFixed(2));
 
-				// tăng trong localstorage:
-				let productid = $(this).closest("tr.item_row").find("th").text();
-				Object.keys(list_product).map(function (key, index) {
-					if (key == productid) {
-						list_product[key]['quantity'] = new_qty;
-					}
-				})
-				localStorage.setItem("list_product", JSON.stringify(list_product));
+                // tăng trong localstorage:
+                let productid = $(this).closest("tr.item_row").find("th").text();
+                Object.keys(list_product).map(function (key, index) {
+                    if (key == productid) {
+                        list_product[key]['quantity'] = new_qty;
+                    }
+                })
+                localStorage.setItem("list_product", JSON.stringify(list_product));
 
-				// tang sl product trong giỏ cart:
-				total_products=total_products+1;
-				$("div.header__nav__option").find("a:nth-child(3)").find("span").text(total_products);
+                // tang sl product trong giỏ cart:
+                total_products = total_products + 1;
+                $("div.header__nav__option").find("a:nth-child(3)").find("span").text(total_products);
 
-			})
+            })
 
             // click nut giam:
             $("button.cart_quantity_down").click(function () {
-				// giảm trên màn hình:
-				let current_qty = $(this).closest("td.product-quantity").find("div.quantity-number").find("input.input-value").val();
-				let unit_price = $(this).closest("tr").find("td.product-price").text();
-				let current_total_cart = $("tr.total-row").find("td:last-child").find("span").text();
+                // giảm trên màn hình:
+                let current_qty = $(this).closest("td.product-quantity").find("div.quantity-number").find("input.input-value").val();
+                let unit_price = $(this).closest("tr").find("td.product-price").text();
+                let current_total_cart = $("tr.total-row").find("td:last-child").find("span").text();
 
-				if (parseInt(current_qty) > 1) {
-					var new_qty = parseInt(current_qty) - 1;
+                if (parseInt(current_qty) > 1) {
+                    var new_qty = parseInt(current_qty) - 1;
                     $(this).closest("td.product-quantity").find("div.quantity-number").find("input.input-value").val(new_qty);
 
-					let new_subtotal = new_qty * parseInt(unit_price.substring(1,));
-				    $(this).closest("tr").find("td.product-subtotal").text("$" + new_subtotal);
+                    let new_subtotal = new_qty * parseInt(unit_price.substring(1,));
+                    $(this).closest("tr").find("td.product-subtotal").text("$" + new_subtotal.toFixed(2));
 
-					var new_total_cart = parseInt(current_total_cart) - parseInt(unit_price.substring(1,));
-				    $("tr.total-row").find("td:last-child").find("span").text(new_total_cart);
+                    var new_total_cart = parseInt(current_total_cart) - parseInt(unit_price.substring(1,));
+                    $("tr.total-row").find("td:last-child").find("span").text(new_total_cart.toFixed(2));
 
-					// giảm trong localstorage:
-					let productid = $(this).closest("tr.item_row").find("th").text();
-					Object.keys(list_product).map(function (key, index) {
-						if (key == productid) {
-							list_product[key]['quantity'] = new_qty;
-						}
-					})
+                    // giảm trong localstorage:
+                    let productid = $(this).closest("tr.item_row").find("th").text();
+                    Object.keys(list_product).map(function (key, index) {
+                        if (key == productid) {
+                            list_product[key]['quantity'] = new_qty;
+                        }
+                    })
 
-					// giảm sl product trong giỏ cart:
-					total_products=total_products-1;
-					$("div.header__nav__option").find("a:nth-child(3)").find("span").text(total_products);
-				}
-				localStorage.setItem("list_product", JSON.stringify(list_product));
+                    // giảm sl product trong giỏ cart:
+                    total_products = total_products - 1;
+                    $("div.header__nav__option").find("a:nth-child(3)").find("span").text(total_products);
+                }
+                localStorage.setItem("list_product", JSON.stringify(list_product));
 
-			})
-            
+            })
+
             // delete:
-            $("button.remove-product").click(function(){
+            $("button.remove-product").click(function () {
                 // delete trên màn hình:
-				let current_total_cart = $("tr.total-row").find("td:last-child").find("span").text();
-				let current_subtotal = $(this).closest("tr.item_row").find("td.product-subtotal").text();
-				$(this).closest("tr.item_row").remove();
-				let new_total_cart = parseInt(current_total_cart) - parseInt(current_subtotal.substring(1,));
+                let current_total_cart = $("tr.total-row").find("td:last-child").find("span").text();
+                let current_subtotal = $(this).closest("tr.item_row").find("td.product-subtotal").text();
+                $(this).closest("tr.item_row").remove();
+                let new_total_cart = parseInt(current_total_cart) - parseInt(current_subtotal.substring(1,));
                 $("tr.total-row").find("td:last-child").find("span").text(new_total_cart);
 
-				// delete trong localstorage:
-				let productid = $(this).closest("tr.item_row").find("th").text();
-				Object.keys(list_product).map(function (key, index) {
-					if (key == productid) {
-						// giảm sl product trong giỏ cart
-						total_products=total_products-parseInt(list_product[key]['quantity']);
-						$("div.header__nav__option").find("a:nth-child(3)").find("span").text(total_products);
-						// xóa product
-						delete list_product[key];
-					}
-				})
-				localStorage.setItem("list_product", JSON.stringify(list_product));
+                // delete trong localstorage:
+                let productid = $(this).closest("tr.item_row").find("th").text();
+                Object.keys(list_product).map(function (key, index) {
+                    if (key == productid) {
+                        // giảm sl product trong giỏ cart
+                        total_products = total_products - parseInt(list_product[key]['quantity']);
+                        $("div.header__nav__option").find("a:nth-child(3)").find("span").text(total_products);
+                        // xóa product
+                        delete list_product[key];
+                    }
+                })
+                localStorage.setItem("list_product", JSON.stringify(list_product));
 
-                
-			})
-            // })
+
+            })
         })
     </script>
 </body>
 
 </html>
-
