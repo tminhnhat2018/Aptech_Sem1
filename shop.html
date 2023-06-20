@@ -294,6 +294,8 @@
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="shop__product__option__left">
                                     <p>Showing 1–12 of 126 results</p>
+                                     <!-- Show class debug in id demo -->
+                                    <p id="demo"></p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6">
@@ -849,6 +851,13 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/shop.js"></script>
+
+    <script>
+        const element = document.getElementsByClassName("filter__controls");
+        
+        document.getElementById("demo").innerHTML = 'The text in first paragraph (index 0) is: ' + element[0].innerHTML;
+        
+    </script>
 
 </body>
 

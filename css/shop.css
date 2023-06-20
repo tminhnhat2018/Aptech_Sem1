@@ -39,7 +39,7 @@
   Product
 -----------------------*/
 
-.product {
+/* .product {
 	padding-top: 0;
 	padding-bottom: 60px;
 }
@@ -65,7 +65,7 @@
 
 .filter__controls li.active {
 	color: #111111;
-}
+} */
 
 .product__item {
 	overflow: hidden;
