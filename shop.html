@@ -75,7 +75,7 @@
                             <li class="active"><a href="./shop.html">Shop</a></li>
                             <li><a href="shop-details.html">Products</a>
                                 <ul class="dropdown">
-                                    <li><a href="./shop.html">All Products</a></li>
+                                    <li><a href="./shop-details.html">Details Products</a></li>
                                     <li><a href="./shop.html">For Man</a></li>
                                     <li><a href="./shop.html">For Woman</a></li>
                                     <li><a href="./shop.html">For Kids</a></li>
@@ -129,7 +129,7 @@
                         <div class="shop__sidebar__search">
                             <form action="#">
                                 <input type="text" placeholder="Search...">
-                                <button type="submit"><span class="icon_search"></span></button>
+                                <!-- <button type="submit"><span class="icon_search"></span></button> -->
                             </form>
                         </div>
                         <div class="shop__sidebar__accordion">
@@ -294,6 +294,8 @@
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="shop__product__option__left">
                                     <p>Showing 1–12 of 126 results</p>
+                                     <!-- Show class debug in id demo -->
+                                    <p id="demo"></p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6">
@@ -320,7 +322,7 @@
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6>Piqué Biker Jacket</h6>
+                                    <h6>Biker Jacket</h6>
                                     <a href="#" class="add-cart">+ Add To Cart</a>
                                     <div class="rating">
                                         <i class="fa fa-star-o"></i>
@@ -532,7 +534,7 @@
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6>Piqué Biker Jacket</h6>
+                                    <h6>Biker Jacket</h6>
                                     <a href="#" class="add-cart">+ Add To Cart</a>
                                     <div class="rating">
                                         <i class="fa fa-star-o"></i>
@@ -849,6 +851,13 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/shop.js"></script>
+
+    <script>
+        const element = document.getElementsByClassName("");
+        
+        document.getElementById("demo").innerHTML = 'The text in first paragraph (index 0) is: ' + element[0].innerHTML;
+        
+    </script>
 
 </body>
 
