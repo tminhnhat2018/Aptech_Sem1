@@ -75,7 +75,7 @@
                             <li><a href="./shop.html">Shop</a></li>
                             <li class="active"><a href="shop-details.html">Products</a>
                                 <ul class="dropdown">
-                                    <li><a href="./shop.html">All Products</a></li>
+                                    <li><a href="./shop-details.html">Details Products</a></li>
                                     <li><a href="./shop.html">For Man</a></li>
                                     <li><a href="./shop.html">For Woman</a></li>
                                     <li><a href="./shop.html">For Kids</a></li>
@@ -165,7 +165,7 @@
                             <div class="tab-pane" id="tabs-4" role="tabpanel">
                                 <div class="product__details__pic__item">
                                     <img src="img/shop-details/product-big-4.png" alt="">
-                                    <a href="https://www.youtube.com/watch?v=8PJ3_p7VqHw&list=RD8PJ3_p7VqHw&start_radio=1" class="video-popup"><i class="fa fa-play"></i></a>
+                                    <a href="https://www.youtube.com/watch?v=23yJOu9LSwE" class="video-popup"><i class="fa fa-play"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -178,6 +178,8 @@
                 <div class="row d-flex justify-content-center">
                     <div class="col-lg-8">
                         <div class="product__details__text">
+                            <!-- Show class debug in id demo -->
+                            <p id="demo"></p>
                             <h4>Hooded thermal anorak</h4>
                             <div class="rating">
                                 <i class="fa fa-star"></i>
@@ -624,6 +626,13 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/shop-details.js"></script>
+
+    <script>
+        const element = document.getElementsByClassName("product");
+        
+        document.getElementById("demo").innerHTML = 'The text in first paragraph (index 0) is: ' + element[0].innerHTML;
+        
+    </script>
 </body>
 
 </html>

@@ -6,22 +6,22 @@
     /*------------------
         Preloader
     --------------------*/
-    $(window).on('load', function () {
-        $(".loader").fadeOut();
-        $("#preloder").delay(200).fadeOut("slow");
+    // $(window).on('load', function () {
+    //     $(".loader").fadeOut();
+    //     $("#preloder").delay(200).fadeOut("slow");
 
-        /*------------------
-            Gallery filter
-        --------------------*/
-        $('.filter__controls li').on('click', function () {
-            $('.filter__controls li').removeClass('active');
-            $(this).addClass('active');
-        });
-        if ($('.product__filter').length > 0) {
-            var containerEl = document.querySelector('.product__filter');
-            var mixer = mixitup(containerEl);
-        }
-    });
+    //     /*------------------
+    //         Gallery filter
+    //     --------------------*/
+    //     $('.filter__controls li').on('click', function () {
+    //         $('.filter__controls li').removeClass('active');
+    //         $(this).addClass('active');
+    //     });
+    //     if ($('.product__filter').length > 0) {
+    //         var containerEl = document.querySelector('.product__filter');
+    //         var mixer = mixitup(containerEl);
+    //     }
+    // });
 
     /*------------------
         Background Set
@@ -43,14 +43,6 @@
     });
 
     /*------------------
-		Navigation
-	--------------------*/
-    // $(".mobile-menu").slicknav({
-    //     prependTo: '#mobile-menu-wrap',
-    //     allowParentLinks: true
-    // });
-
-    /*------------------
         Accordin Active
     --------------------*/
     $('.collapse').on('shown.bs.collapse', function () {
@@ -62,15 +54,15 @@
     });
 
     //Canvas Menu
-    $(".canvas__open").on('click', function () {
-        $(".offcanvas-menu-wrapper").addClass("active");
-        $(".offcanvas-menu-overlay").addClass("active");
-    });
+    // $(".canvas__open").on('click', function () {
+    //     $(".offcanvas-menu-wrapper").addClass("active");
+    //     $(".offcanvas-menu-overlay").addClass("active");
+    // });
 
-    $(".offcanvas-menu-overlay").on('click', function () {
-        $(".offcanvas-menu-wrapper").removeClass("active");
-        $(".offcanvas-menu-overlay").removeClass("active");
-    });
+    // $(".offcanvas-menu-overlay").on('click', function () {
+    //     $(".offcanvas-menu-wrapper").removeClass("active");
+    //     $(".offcanvas-menu-overlay").removeClass("active");
+    // });
 
     /*-----------------------
         Hero Slider
